@@ -1,0 +1,17 @@
+# Local configuration
+appsettings.local.json
+
+# Build output
+bin/
+obj/
+
+# Selenium generated files
+Screenshots/
+Reports/
+Downloads/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
