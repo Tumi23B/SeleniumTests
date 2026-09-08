@@ -1005,19 +1005,19 @@ namespace SeleniumTests.Utilities
                 "<footer class='footer'>"
             );
 
-            sb.AppendLine(
-                "<div>" +
-                "SeleniumTests Automation Framework" +
-                "</div>"
-            );
+           sb.AppendLine(
+    "<div style=\"font-size: 20px; font-weight: 700;\">" +
+    "Generated Report for Boitumelo's Automation" +
+    "</div>"
+);
 
-            sb.AppendLine(
-                $"<div>Report generated {endTime:yyyy-MM-dd HH:mm:ss}</div>"
-            );
+sb.AppendLine(
+    $"<div style=\"font-weight: 600;\">Report generated {endTime:yyyy-MM-dd HH:mm:ss}</div>"
+);
 
-            sb.AppendLine(
-                "</footer>"
-            );
+sb.AppendLine(
+    "</footer>"
+);
 
             sb.AppendLine("</div>");
             sb.AppendLine("</body>");
