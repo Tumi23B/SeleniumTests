@@ -1007,7 +1007,7 @@ namespace SeleniumTests.Utilities
 
             sb.AppendLine(
                 "<div>" +
-                "Boity's Web Destroyer!!!" +
+                "SeleniumTests Automation Framework" +
                 "</div>"
             );
 

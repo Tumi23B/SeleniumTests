@@ -61,20 +61,20 @@ namespace SeleniumTests.Pages
             string username,
             string password)
         {
-            if (string.IsNullOrWhiteSpace(username))
+            // NB:
+            // Only null is rejected here, not empty strings.
+            // The empty-credentials test intentionally submits
+            // blank fields so the application's own validation
+            // message can be exercised and captured.
+
+            if (username == null)
             {
-                throw new ArgumentException(
-                    "Username cannot be null or empty.",
-                    nameof(username)
-                );
+                throw new ArgumentNullException(nameof(username));
             }
 
-            if (string.IsNullOrWhiteSpace(password))
+            if (password == null)
             {
-                throw new ArgumentException(
-                    "Password cannot be null or empty.",
-                    nameof(password)
-                );
+                throw new ArgumentNullException(nameof(password));
             }
 
             Type(
